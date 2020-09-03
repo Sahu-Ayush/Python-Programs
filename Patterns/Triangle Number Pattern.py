@@ -1,0 +1,61 @@
+# Triangle Number Pattern
+
+'''
+Print the following pattern for the given N number of rows.
+
+Pattern for N = 4
+
+1
+22
+333
+4444
+
+
+Input format :
+Integer N (Total no. of rows)
+
+
+utput format :
+Pattern in N lines
+
+
+Constraints
+0 <= N <= 50
+
+
+Sample Input 1:
+5
+
+Sample Output 1:
+1
+22
+333
+4444
+55555
+
+
+Sample Input 2:
+6
+
+Sample Output 2:
+1
+22
+333
+4444
+55555
+666666
+'''
+
+
+# CODE #
+
+N = int(input())
+i = 1
+
+while i <= N:               # Outer while loop reprent numbers of rows
+    j = 1
+    while j <= i:           # Inner loop will execute till ith times in each iteration of outter loop; to
+        print(i, end="")    # Print ith value, j's time in the jth row
+        j += 1
+    print()
+    i += 1
